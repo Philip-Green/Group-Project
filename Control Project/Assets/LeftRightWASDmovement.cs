@@ -18,7 +18,7 @@ public class LeftRightWASDmovement : MonoBehaviour
     {
       if(Input.GetKey(KeyCode.A))
       {
-        myTransform.position += new Vector3 (Time.deltaTime * speed, 0 , 0);
+        myTransform.position += new Vector3 (-Time.deltaTime * speed, 0 , 0);
       }
       if(Input.GetKeyUp(KeyCode.A))
       {
