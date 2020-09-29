@@ -18,7 +18,7 @@ public class wasdMovement : MonoBehaviour
     {
       if(Input.GetKey(KeyCode.W))
       {
-        myTransform.position += new Vector3 (0, Time.deltaTime * speed , 0);
+        myTransform.position += new Vector3 (0, 0, Time.deltaTime * speed );
       }
       if(Input.GetKeyUp(KeyCode.W))
       {
@@ -26,7 +26,7 @@ public class wasdMovement : MonoBehaviour
       }
       if(Input.GetKey(KeyCode.S))
       {
-        myTransform.position += new Vector3 (0, Time.deltaTime * speed , 0);
+        myTransform.position += new Vector3 (0, 0, Time.deltaTime * speed );
       }
       if(Input.GetKeyDown(KeyCode.S))
       {
