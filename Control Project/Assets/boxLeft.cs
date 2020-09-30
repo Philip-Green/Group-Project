@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boxMovement : MonoBehaviour
+public class boxLeft : MonoBehaviour
 {
   private Transform myTransform;
   private float speed;
@@ -10,12 +10,12 @@ public class boxMovement : MonoBehaviour
     void Start()
     {
       myTransform = transform;
-      speed = Random.Range(-3.50f, 3.50f);
+      speed = Random.Range(-1.50f, 1.50f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        myTransform.position += (Vector3.right * Time.deltaTime * speed) ;
+        myTransform.position += (Vector3.left * Time.deltaTime * speed) ;
     }
 }
