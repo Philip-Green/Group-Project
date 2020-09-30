@@ -6,7 +6,7 @@ public class wasdMovement : MonoBehaviour
 {
   public Transform myTransform;
 
-  private float speed = 3.3f;
+  private float speed = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class wasdMovement : MonoBehaviour
       }
       if(Input.GetKeyUp(KeyCode.W))
       {
-        myTransform.position += Vector3.up;
+        myTransform.position += Vector3.forward;
       }
       if(Input.GetKey(KeyCode.S))
       {
@@ -30,7 +30,7 @@ public class wasdMovement : MonoBehaviour
       }
       if(Input.GetKeyDown(KeyCode.S))
       {
-        myTransform.position += Vector3.down;
+        myTransform.position += Vector3.back;
       }
     }
 }

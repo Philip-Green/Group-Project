@@ -6,7 +6,7 @@ public class LeftRightWASDmovement : MonoBehaviour
 {
   public Transform myTransform;
 
-  private float speed = 3.3f;
+  private float speed = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
